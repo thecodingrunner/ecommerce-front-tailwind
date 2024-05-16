@@ -11,7 +11,7 @@ import { Product } from "@/models/Product";
 
 export default function HomePage({featuredProduct,newProducts}) {
   return (
-    <div>
+    <div className="overflow-hidden">
       <Header />
       <Hero />
       <About />

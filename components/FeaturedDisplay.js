@@ -3,12 +3,16 @@ import Link from "next/link";
 export default function Featured({product}) {
   console.log(product)
   return (
-    <div className="featured-container mx-auto w-9/12 pt-10">
-        <div className="flex justify-center align-center flex-col">
-            <h1 className="h1 mb-4">{product.title}</h1>
-            <p className="desc">{product.description}</p>
+    <div className="grid md:grid-cols-2 mx-auto w-9/12 pt-10 sm:grid-cols-1">
+        <div className="flex justify-center flex-col">
+            <h1 className="h2 sm:h1 mb-4">{product.title}</h1>
+            <p className="desc">{product.description.split(/\n/g).map(s => (
+                        <p>{s}</p>
+                    ))}</p>
         </div>
-        <img src={product.image.src} alt=""></img>
+        <div className="md:flex justify-center items-center hidden">
+          <img src={product.image.src} alt="" className="max-h-96"></img>
+        </div>
     </div>
   );
 }

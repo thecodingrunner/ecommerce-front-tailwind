@@ -64,48 +64,49 @@ export default function CartPage() {
     return (
         <div>
             <Header />
-            <div className="grid grid-cols-2 gap-10 w-9/12 mx-auto">
-                <div>
+            <div className="grid sm:grid-cols-1 xl:grid-cols-2 gap-10 w-9/12 mx-auto mt-20">
+                <div className="mb-10">
                     {!cartProducts?.length && (
                         <div>Cart is empty</div>
                     )}
-                    <table className="w-1/2">
+                    <table className="text-lg shadow-lg table-style sm:m-auto">
                         <thead>
                             <tr>
-                                <th>Product</th>
-                                <th>Quantity</th>
-                                <th>Price</th>
+                                <th className="table-item pt-5">Product</th>
+                                <th className="table-item pt-5">Quantity</th>
+                                <th className="table-item pt-5">Price</th>
                             </tr>
                         </thead>
                         <tbody>
                         {cartProducts?.length > 0 && (
                                 products.map(product => (
                                     <tr className="text-center">
-                                        <td>{product.title}</td>
-                                        <td className="flex justify-center">
-                                            <button className="btn-primary" onClick={() => lessOfThisProduct(product._id)}>-</button>
+                                        <td className="table-item">{product.title}</td>
+                                        <td className="flex justify-center table-item">
+                                            <button className="btn-secondary" onClick={() => lessOfThisProduct(product._id)}>-</button>
                                             <p className="mx-2">{cartProducts.filter(id => id === product._id).length}</p>
-                                            <button className="btn-primary" onClick={() => moreOfThisProduct(product._id)}>+</button>
+                                            <button className="btn-secondary" onClick={() => moreOfThisProduct(product._id)}>+</button>
                                         </td>
-                                        <td>£{cartProducts.filter(id => id === product._id).length * product.price}</td>
+                                        <td className="table-item">£{cartProducts.filter(id => id === product._id).length * product.price}</td>
                                     </tr>
                                 ))
                         )}
                         <tr className="text-center">
                             <td></td>
                             <td></td>
-                            <td>£{total}</td>
+                            <td className="font-bold pb-5">£{total}</td>
                         </tr>
                     </tbody>
                     </table>
                 </div>
-                <div>
+                <div className="mb-10">
                     <input 
                         type="text" 
                         placeholder="Name" 
                         value={name} 
                         name="name"
                         onChange={ev => setName(ev.target.value)} 
+                        className="input"
                     />
                     <input 
                         type="text" 
@@ -113,6 +114,7 @@ export default function CartPage() {
                         value={email} 
                         name="email"
                         onChange={ev => setEmail(ev.target.value)} 
+                        className="input"
                     />
                     <input 
                         type="text" 
@@ -120,6 +122,7 @@ export default function CartPage() {
                         value={city} 
                         name="city"
                         onChange={ev => setCity(ev.target.value)} 
+                        className="input"
                     />
                     <input 
                         type="text" 
@@ -127,6 +130,7 @@ export default function CartPage() {
                         value={postalCode} 
                         name="postalCode"
                         onChange={ev => setPostalCode(ev.target.value)} 
+                        className="input"
                     />
                     <input 
                         type="text" 
@@ -134,6 +138,7 @@ export default function CartPage() {
                         value={streetAddress} 
                         name="streetAddress"
                         onChange={ev => setStreetAddress(ev.target.value)} 
+                        className="input"
                     />
                     <input 
                         type="text" 
@@ -141,8 +146,9 @@ export default function CartPage() {
                         value={country} 
                         name="country"
                         onChange={ev => setCountry(ev.target.value)}
+                        className="input"
                     />
-                    <button onClick={goToPayment} >Continue to payment</button>
+                    <button onClick={goToPayment} className="btn-primary">Continue to payment</button>
                 </div>
             </div>
         </div>

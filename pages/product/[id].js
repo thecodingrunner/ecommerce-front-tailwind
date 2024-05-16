@@ -10,16 +10,16 @@ export default function ProductPage({product}) {
     return (
         <>
             <Header />
-            <div className="grid grid-cols-2 gap-10 w-9/12 mx-auto">
-                <div>
+            <div className="grid grid-cols-2 gap-10 w-9/12 mx-auto mb-20 mt-10">
+                <div className="shadow-md">
                     <img src={product.images[0]} className="rounded-lg"/>
                 </div>
                 <div>
                     <h1 className="h1 mb-10">{product.title}</h1>
                     <p className="desc mb-10">{product.description}</p>
                     <div className="flex justify-between items-center px-3">
-                        <p className="text-lg">£{product.price}</p>
-                        <button onClick={() => addProduct(product._id)} className="btn-primary">Add to cart</button>
+                        <p className="desc">£{product.price}</p>
+                        <button onClick={() => addProduct(product._id)} className="btn-primary desc">Add to cart</button>
                     </div>
                 </div>
             </div>

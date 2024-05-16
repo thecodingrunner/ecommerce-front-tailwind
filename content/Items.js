@@ -14,79 +14,122 @@ import dog12 from '../public/dogs/dog12.jpg'
 import dog13 from '../public/dogs/dog14.jpg'
 import dog14 from '../public/dogs/dog15.jpg'
 // Import crazy steve images
+import steve1 from '../public/steve/alway in the wrong queue.jpg'
+import steve2 from '../public/steve/always know.JPG'
+import steve3 from '../public/steve/bad influencer.JPG'
+import steve4 from '../public/steve/cant yousay.JPG'
+import steve5 from '../public/steve/do i look bothered.JPG'
+import steve6 from '../public/steve/hate the tories.JPG'
+import steve7 from '../public/steve/i think you will find.JPG'
+import steve8 from '../public/steve/in my defence.JPG'
+import steve9 from '../public/steve/in my head.JPG'
+import steve10 from '../public/steve/task avoidance.JPG'
+import steve11 from '../public/steve/whatever it is.JPG'
+import steve12 from '../public/steve/youre special.JPG'
+// Import story images
+import story1 from '../public/stories/bank job.jpg'
+import story2 from '../public/stories/dedicated follower.jpg'
+import story3 from '../public/stories/dream of someone pic2.jpg'
+import story4 from '../public/stories/ecofriendly.jpg'
+import story5 from '../public/stories/flight cancelled.jpg'
+import story6 from '../public/stories/hellhathnofury.jpg'
+import story7 from '../public/stories/inflation.jpg'
+import story8 from '../public/stories/minichops.jpg'
+import story9 from '../public/stories/mistakenidentity.jpg'
+import story10 from '../public/stories/road to d pic1.jpg'
+import story11 from '../public/stories/spacecraft.jpg'
+import story12 from '../public/stories/strike.jpg'
+import story13 from '../public/stories/unexpected.jpg'
+
+
 
 export const ScribbleDogs = [
     {
+        id: 'dog0',
         title: 'Scribble Dogs',
         description: 'In my head this is what dogs look like.',
         image: dog10,
     },
     {
+        id: 'dog1',
         title: 'dog 1',
         description: '',
         image: dog1,
     },
     {
+        id: 'dog2',
         title: 'dog 2',
         description: '',
         image: dog2,
     },
     {
+        id: 'dog3',
         title: 'dog 3',
         description: '',
         image: dog3,
     },
     {
+        id: 'dog4',
         title: 'dog 4',
         description: '',
         image: dog4,
     },
     {
+        id: 'dog5',
         title: 'dog 5',
         description: '',
         image: dog5,
     },
     {
+        id: 'dog6',
         title: 'dog 6',
         description: '',
         image: dog6,
     },
     {
+        id: 'dog7',
         title: 'dog 7',
         description: '',
         image: dog7,
     },
     {
+        id: 'dog8',
         title: 'dog 8',
         description: '',
         image: dog8,
     },
     {
+        id: 'dog9',
         title: 'dog 9',
         description: '',
         image: dog9,
     },
     {
+        id: 'dog10',
         title: 'dog 10',
         description: '',
         image: dog14,
     },
     {
+        id: 'dog11',
         title: 'dog 11',
         description: '',
         image: dog11,
     },
     {
+        id: 'dog12',
         title: 'dog 12',
         description: '',
         image: dog12,
     },
     {
+        id: 'dog13',
         title: 'dog 13',
         description: '',
         image: dog13,
     },
     {
+        id: 'dog14',
         title: 'dog 14',
         description: '',
         image: dog10,
@@ -95,57 +138,275 @@ export const ScribbleDogs = [
 
 export const CrazieSteve = [
     {
+        id: 'steve0',
         title: 'Crazie Steve',
-        description: `Ive always wanted a monkey, My wife says “Its me or the monkey.”
-        I still keep thinking about the monkey.`,
-        image: '',
+        description: `
+        -Free Thinker\n
+        -Visionary\n
+        -Monkey\n
+        I’ve always wanted a monkey. My wife says “It’s me or the monkey.”\n
+        I still keep thinking about the monkey.\n
+        `,
+        image: steve3,
     },
     {
-        title: 'crazie steve 1',
-        description: 'Relatively short description about crazie steve 1.',
-        image: '',
+        id: 'steve1',
+        title: 'Always in the wrong queue',
+        description: '',
+        image: steve1,
     },
     {
-        title: 'crazie steve 2',
-        description: 'Relatively short description about crazie steve 2.',
-        image: '',
+        id: 'steve2',
+        title: 'Always know',
+        description: '',
+        image: steve2,
     },
     {
-        title: 'crazie steve 3',
-        description: 'Relatively short description about crazie steve 3.',
-        image: '',
+        id: 'steve3',
+        title: 'Bad influencer',
+        description: '',
+        image: steve3,
     },
     {
-        title: 'crazie steve 4',
-        description: 'Relatively short description about crazie steve 4.',
-        image: '',
+        id: 'steve4',
+        title: 'Cant you say',
+        description: '',
+        image: steve4,
+    },
+    {
+        id: 'steve5',
+        title: 'Do i look bothered',
+        description: '',
+        image: steve5,
+    },
+    {
+        id: 'steve6',
+        title: 'Hate the tories',
+        description: '',
+        image: steve6,
+    },
+    {
+        id: 'steve7',
+        title: 'I think you will find',
+        description: '',
+        image: steve7,
+    },
+    {
+        id: 'steve8',
+        title: 'In my defence',
+        description: '',
+        image: steve8,
+    },
+    {
+        id: 'steve9',
+        title: 'In my head',
+        description: '',
+        image: steve9,
+    },
+    {
+        id: 'steve10',
+        title: 'Task avoidance',
+        description: '',
+        image: steve10,
+    },
+    {
+        id: 'steve11',
+        title: 'Whatever it is',
+        description: '',
+        image: steve11,
+    },
+    {
+        id: 'steve12',
+        title: 'Youre special',
+        description: '',
+        image: steve12,
     },
 ]
 
 export const VeryShortStories = [
     {
+        id: 'story0',
         title: 'Very Short Stories',
         description: `I like to keep things as brief as possible. All the stories are based in truth to a greater or lesser extent.`,
-        image: '',
+        image: story8,
     },
     {
-        title: 'very short story 1',
-        description: 'Relatively short description about very short story 1.',
-        image: '',
+        id: 'story1',
+        title: 'A Dream of Someone Famous',
+        description: 'What’s his face came to me in a dream. Harold Wilson. No not him, him on the telly that wears big flowery shirts. No hang on, that’s another fella. A celebrity, bit of an arsehole. Always talking bollox, thinks he’s it. Anyway, he had a big stick and looked slightly angry so I took it off him.',
+        image: story3,
     },
     {
-        title: 'very short story 2',
-        description: 'Relatively short description about very short story 2.',
-        image: '',
+        id: 'story2',
+        title: 'Bank Job',
+        description: `
+        You know that bank job I was going to do?\n
+        Yeah.\n
+        I've done it.\n
+        Good.\n
+        Good??\n
+        Yeah.\n
+        Is that it?\n
+        What else did you expect?\n
+        How about 'how much did you get?'\n
+        How much did you get?\n
+        Nothing, I couldn't remember my PIN.\n
+        Technically that's not a bank job. That's just you unsuccessfully getting some of your own money out.\n
+        It was a bit busy; I kept winking at the cashier but I couldn't get her attention.\n
+        Winking??\n
+        What would you have done then?\n
+        How about firing one into the ceiling and shouting 'everybody down, this is a f**king robbery'?\n
+        I couldn't find the gun, have you seen it?\n
+        Yeah, I used it to hold up the newsagents this morning.\n
+        `,
+        image: story1,
     },
     {
-        title: 'very short story 3',
-        description: 'Relatively short description about very short story 3.',
-        image: '',
+        id: 'story3',
+        title: 'Dedicated follower of fashion',
+        description: `
+        Cakey Johnson opened his window and looked out on the world. \n
+        'Cakey you knobhead!' shouted Jack Nastie from below. \n
+        Cakey ignored him and kept on looking. Jack Nastie came from a long line of arseholes; his grandad was an arsehole, his dad was an arsehole, his mother was an arsehole, his sister was an arsehole. Jack Nastie was an arsehole, but Cakey Johnson loved him all the same. \n
+        'I'm off to get me some o' them emperor's new clothes everyone's talking about!' bellowed Jack Nastie. \n
+        Jack Nastie came from a long line of idiots..................................but Cakey Johnson loved him all the same. \n
+        `,
+        image: story2,
     },
     {
-        title: 'very short story 4',
-        description: 'Relatively short description about very short story 4.',
-        image: '',
+        id: 'story4',
+        title: 'Eco friendly 2',
+        description: `
+        Thinking of burning down a forest to offset \n
+        some ethically produced cheese I've just purchased.
+        `,
+        image: story4,
+    },
+    {
+        id: 'story5',
+        title: 'Flight cancelled',
+        description: `
+        I can't decide whether to fly a plane or not.\n
+        How do you mean?\n
+        You know, should I or shouldn't I?\n
+        I meant how? I wasn't aware that you had a pilot's licence.\n
+        It's a lot like driving a car I expect, but with more buttons.\n
+        Yeah, but they're not just for the heated window on a plane are they? I suspect it's a bit more complicated than that.\n
+        Well I don't even use all the buttons on a car, so if I stick to the basics and just use the steering wheel I should be alright.\n
+        Except that a plane hasn't got a steering wheel.\n
+        Hasn't it?\n
+        Have you been on plane before?\n
+        No.\n
+        Thought not.\n
+        `,
+        image: story5,
+    },
+    {
+        id: 'story6',
+        title: 'Fury',
+        description: `Dreamt I was on a plane sat next to that Tyson Fury. He had woolly gloves on and one o' them bollock protectors over his mucky jeans. He was banging on about how he could take a punch. I smashed him with an uppercut. He was right. I said I'd prefer it if he didn't reciprocate, on account of all my health conditions and that I would like to remain handsome. I don't think he heard me as a knuckle sandwich was already on its way.........\n
+        I woke up at that point, teeth intact.
+        `,
+        image: story6,
+    },
+    {
+        id: 'story7',
+        title: 'Inflation',
+        description: `
+        Did you get the bread cakes?\n
+        Yeah.\n
+        How much do I owe you?\n
+        Well they weren't cheap. Artisan, no nuts in them, biodegradable etc. Twelve pounds.\n
+        Twelve pounds?? Two pounds a chuck??\n
+        Yeah, like I said...........\n
+        What about the cheese?\n
+        Yeah, got that, no problem.\n
+        How much?\n
+        Twelve pounds.\n
+        Twelve pounds??\n
+        Yeah.\n
+        How much did you get??\n
+        200g.\n
+        F**king hell!!\n
+        Corn fed pigs or something. Not pigs, sheep. No, not sheep, cows.\n
+        And the pickle?\n
+        It's gone up quite a bit since last time; twelve pounds.\n
+        Are you taking the piss?\n
+        No, I'm probably out of pocket on this one, not even covered my costs.\n
+        Let me guess, were the onions twelve pounds too?\n
+        Well, it wasn't easy getting hold of onions...........\n
+        `,
+        image: story7,
+    },
+    {
+        id: 'story8',
+        title: 'Mini chops',
+        description: `
+        Bought a load o' them chops from the butcher, 10 pence for a hundred; I got 5 pence worth. Looked like they were for Action Man or something. I suggested I could put him a 'Mini Chops' sign over the door, just to generate a bit of interest like. He said he wanted to see how his 'Tiny Chickens' went first.\n
+        I left it with him.
+        `,
+        image: story8,
+    },
+    {
+        id: 'story9',
+        title: 'Mistaken identity',
+        description: `
+        Dreamt I met that Tom Hardy in a pub, he had a big gold chain on.\n
+        I said he was good at films and I liked that one where he was in a saloon.\n
+        He said he hadn’t been in a saloon one.\n
+        \n
+        We left it at that.
+        `,
+        image: story9,
+    },
+    {
+        id: 'story10',
+        title: 'Road to damascus',
+        description: `
+        Caveman was a bit hungry. He picked up his shotgun and went outside. He saw a rabbit riding by on a mammoth. Caveman raised his sights and took aim. The rabbit turned and winked at him. He lowered the gun; he couldn't do it to the little furry fella..\n
+        'We're off to pick some privet Caveman, join us!' Shouted the rabbit.\n
+        Caveman put down his rifle, jumped on his bike and followed...............................\n
+        `,
+        image: story10,
+    },
+    {
+        id: 'story11',
+        title: 'Strike',
+        description: `
+        You're needed for another patrol.\n
+        We're not going.\n
+        What do you mean you're not going?\n
+        We're not going. All we've done for two weeks is dig in, stag on, patrol and eat f**king corn on the cob. We've had enough, we're on strike.\n
+        You can't go on strike, you're in the army, it's not allowed.\n
+        Sir, the men say they're on strike; they're fed up with patrolling, as well as various other military related activities.\n
+        Tell them they can't they're in the army, that usually works.\n
+        I've told them that already sir.\n
+        Alright, but would they mind waiting until after the war?\n
+        `,
+        image: story12,
+    },
+    {
+        id: 'story12',
+        title: 'The sky at night',
+        description: `Gerry Spangles looked high into the night sky and saw a strange shape, slowly tracking left to right. “Is that a spacecraft?” he said, waving at it with his bad arm. It might be a spacecraft, though on reflection it was probably a plane. Yeah, definitely a plane; spacecraft don't look like that, at least not the ones I'd seen on telly. “It's a plane Gerry” I shouted back, with all the conviction of someone who wasn't quite sure. Gerry Spangles still thought it was a spacecraft. He had glimpsed something not dissimilar in last week's episode of Blake's 7. He wondered if it would land so he could have a go. He called to Jack Nastie, “Look at that, high in the night sky, I think it's a spacecraft”. “It's a f**king plane Gerry” said Jack Nastie, in that withering tone people use when they think you're a bit of a daft b*****d.`,
+        image: story11,
+    },
+    {
+        id: 'story13',
+        title: 'Unexpected',
+        description: `
+        I've found some ham in the fridge.\n
+        Yeah, I put it there.\n
+        It's just that I wasn't expecting it.\n
+        Stop being f**king stupid.\n
+        It's a new type isn't it?\n
+        No.\n
+        Why does it look different then?\n
+        It doesn't, it's the same as we always have.\n
+        Good.\n
+        Good.\n
+        I've noticed some cheese too.....................\n
+        `,
+        image: story13,
     },
 ]
