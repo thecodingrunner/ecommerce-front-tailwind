@@ -1,40 +1,14 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1>Dickie Mellie Artist Website Portfolio with ecommerce shop</h1>
 
-## Getting Started
+<h2>Description:</h2>
+NextJS website designed for a professional photographer, with an ecommerce shop integrated using stripe.
 
-First, run the development server:
+<h2>Project Purpose and Goal:</h2>
+The goal of this project was to create a presentational website for a local artist/photographer with an integrated ecommerce shop. The primary purpose is to present the artists work, with a shop for local businesses to purchase products such as cards and mugs.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<h2>Webstack and Explanation:</h2>
+NextJS, React, MongoDB, TailwindCSS, HTML, Stripe
+This project was coded using NextJS, MongoDB for the database, and Stripe for the ecommerce integration. The most difficult aspects of this project were the integration of stripe, and the creation of an admin platform with a simple interface for the artist to add products to the shop.
+<p></p>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+![dickie-mellie-markup](https://github.com/thecodingrunner/ecommerce-front-tailwind/assets/22331070/30cffad3-6588-40b9-b315-570047e94cc8)
