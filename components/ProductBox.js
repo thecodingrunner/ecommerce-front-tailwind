@@ -9,7 +9,7 @@ export default function ProductBox({product}) {
     return (
         <Link href={'/product/'+product._id}>
             <div className="h-52 flex justify-center">
-                <Image src={product.images[0]} alt={product.title} className="max-h-full" />
+                <img src={product.images[0]} alt={product.title} className="max-h-full" />
             </div>
             <div className="px-3 mt-6">{product.title}</div>
             <div className="flex justify-between items-center px-3">

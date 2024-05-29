@@ -6,8 +6,8 @@ export default function ItemBox({product}) {
     console.log(product.id)
 
     return (
-            <div className={`${(product.id.includes('steve') || product.id.includes('letter')) ? "h-86" : "h-60"} flex justify-center`}>
-                <Image src={product.image.src} alt={product.id} className="max-h-full shadow-md" />
-            </div>
+        <div className={`h-60 flex justify-center ${(product.id.includes('steve') || product.id.includes('letter')) ? "h-96" : "h-60"}`}>
+            <img src={product.image.src} alt={product.id} className="max-h-full shadow-md object-contain" />
+        </div>
     )
 }

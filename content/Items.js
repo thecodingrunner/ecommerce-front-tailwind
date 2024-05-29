@@ -439,7 +439,7 @@ export const VeryShortStories = [
 export const Letters = [
     {
         id: 'letter1',
-        title: 'No 1 13/03/18',
+        title: 'Letters',
         description: ``,
         image: letter1,
     },

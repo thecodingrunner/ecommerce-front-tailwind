@@ -12,7 +12,7 @@ export default function Featured({product}) {
             ))}</div>
         </div>
         <div className="md:flex justify-center items-center hidden">
-          <Image src={product.image.src} alt={product.title} className="max-h-96" />
+          <img src={product.image.src} alt={product.title} className="max-h-96" />
         </div>
     </div>
   );

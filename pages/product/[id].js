@@ -13,7 +13,7 @@ export default function ProductPage({product}) {
             <Header />
             <div className="grid grid-cols-2 gap-10 w-9/12 mx-auto mb-20 mt-10">
                 <div className="shadow-md">
-                    <Image src={product.images[0]} className="rounded-lg" alt={product.title}/>
+                    <Image src={product.images[0]} className="rounded-lg" alt={product.title} width={500} height={500} layout="responsive"/>
                 </div>
                 <div>
                     <h1 className="h1 mb-10">{product.title}</h1>

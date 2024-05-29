@@ -4,7 +4,7 @@ import { CartContext } from "./CartContext";
 import Image from "next/image";
 
 export default function Featured({product}) {
-    console.log(product)
+    console.log(product.images[0])
     const {addProduct} = useContext(CartContext)
     function addFeaturedToCart() {
         addProduct(product._id)
@@ -24,7 +24,9 @@ export default function Featured({product}) {
                 </button>
             </div>
         </div>
-        <Image src={product.images[0]} alt={product._id} />
+        <div className="responsive h-auto">
+            <img src={product.images[0]} alt={product._id} className="object-contain" />
+        </div>
     </div>
   );
 }

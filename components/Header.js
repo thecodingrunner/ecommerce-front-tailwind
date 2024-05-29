@@ -19,7 +19,7 @@ export default function Header() {
                 {/* <Link href={'/'} className="header-list">Home</Link> */}
                 <Link href={'/scribble-dogs'} className={`header-list ${pathname === '/scribble-dogs' ? 'text-white bg-black' : 'bg-white'}`} >Scribble Dogs</Link>
                 <Link href={'/very-short-stories'} className={`header-list ${pathname === '/very-short-stories' ? 'text-white bg-black' : 'bg-white'}`} >Very Short Stories</Link>
-                <Link href={'/crazie-steve'} className={`header-list ${pathname === '/crazie-steve' ? 'text-white bg-black' : 'bg-white'}`}>Crazie Steve</Link>
+                <Link href={'/crazie-steve'} className={`header-list ${pathname === '/crazie-steve' ? 'text-white bg-black' : 'bg-white'}`}>Crazy Steve</Link>
                 <Link href={'/letters'} className={`header-list ${pathname === '/letters' ? 'text-white bg-black' : 'bg-white'}`}>Letters</Link>
                 <Link href={'/shop'} className={`header-list font-bold ${pathname === '/shop' ? 'text-white bg-black' : 'bg-white'}`}>Shop</Link>
                 <Link href={'/cart'} className={`header-list ${pathname === '/cart' ? 'text-white bg-black' : 'bg-white'}`}>Cart ({cartProducts.length})</Link>
