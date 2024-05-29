@@ -14,7 +14,7 @@ import dog12 from '../public/dogs/dog12.jpg'
 import dog13 from '../public/dogs/dog14.jpg'
 import dog14 from '../public/dogs/dog15.jpg'
 // Import crazy steve images
-import steve1 from '../public/steve/alway in the wrong queue.jpg'
+import steve1 from '../public/steve/alway in the wrong queue.JPG'
 import steve2 from '../public/steve/always know.JPG'
 import steve3 from '../public/steve/bad influencer.JPG'
 import steve4 from '../public/steve/cant yousay.JPG'
