@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useContext } from "react";
 import { CartContext } from "./CartContext";
+import Image from "next/image";
 
 export default function Featured({product}) {
     console.log(product)
@@ -23,7 +24,7 @@ export default function Featured({product}) {
                 </button>
             </div>
         </div>
-        <img src={product.images[0]} alt=""></img>
+        <Image src={product.images[0]} alt={product._id} />
     </div>
   );
 }

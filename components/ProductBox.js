@@ -1,6 +1,7 @@
 import { useContext } from "react"
 import { CartContext } from "./CartContext"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function ProductBox({product}) {
     console.log(product)
@@ -8,7 +9,7 @@ export default function ProductBox({product}) {
     return (
         <Link href={'/product/'+product._id}>
             <div className="h-52 flex justify-center">
-                <img src={product.images[0]} alt='' className="max-h-full" />
+                <Image src={product.images[0]} alt={product.title} className="max-h-full" />
             </div>
             <div className="px-3 mt-6">{product.title}</div>
             <div className="flex justify-between items-center px-3">

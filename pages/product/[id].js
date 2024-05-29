@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import { mongooseConnect } from "@/lib/mongoose";
 import { Product } from "@/models/Product";
 import mongoose from "mongoose";
+import Image from "next/image";
 import { useContext } from "react";
 
 export default function ProductPage({product}) {
@@ -12,7 +13,7 @@ export default function ProductPage({product}) {
             <Header />
             <div className="grid grid-cols-2 gap-10 w-9/12 mx-auto mb-20 mt-10">
                 <div className="shadow-md">
-                    <img src={product.images[0]} className="rounded-lg"/>
+                    <Image src={product.images[0]} className="rounded-lg" alt={product.title}/>
                 </div>
                 <div>
                     <h1 className="h1 mb-10">{product.title}</h1>

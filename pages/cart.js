@@ -80,7 +80,7 @@ export default function CartPage() {
                         <tbody>
                         {cartProducts?.length > 0 && (
                                 products.map(product => (
-                                    <tr className="text-center">
+                                    <tr className="text-center" key={product._id}>
                                         <td className="table-item">{product.title}</td>
                                         <td className="flex justify-center table-item">
                                             <button className="btn-secondary" onClick={() => lessOfThisProduct(product._id)}>-</button>

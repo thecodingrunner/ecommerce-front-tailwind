@@ -11,7 +11,7 @@ export default function NewProducts({products}) {
     return (
         <div className="grid xl:grid-cols-3 gap-5 mx-auto w-9/12 my-10 sm:grid-cols-1 lg:grid-cols-2">
             {products.length > 0 && products.map((product) => (
-                <button onClick={() => setOpenModal(product)}>
+                <button onClick={() => setOpenModal(product)} key={product.id}>
                     <ItemBox product={product} />
                 </button>
             ))}

@@ -7,11 +7,11 @@ export default function Featured({product}) {
         <div className="flex justify-center flex-col">
             <h1 className="h2 sm:h1 mb-4">{product.title}</h1>
             <div className="desc">{product.description.split(/\n/g).map(s => (
-                        <p>{s}</p>
+              <p key={product.id}>{s}</p>
             ))}</div>
         </div>
         <div className="md:flex justify-center items-center hidden">
-          <img src={product.image.src} alt="" className="max-h-96"></img>
+          <Image src={product.image.src} alt={product.title} className="max-h-96" />
         </div>
     </div>
   );

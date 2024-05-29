@@ -57,7 +57,7 @@ const Modal = ({ openModal, setOpenModal, products }) => {
                 <div className='flex w-[40vw] flex-col items-center justify-center text-center'>
                     <h1 className='text-3xl font-semibold mb-4'>{currentProduct?.title}</h1>
                     <p className='text-md'>{currentProduct?.description?.split(/\n/g).map(s => (
-                        <p>{s}</p>
+                        <p key={currentProduct.title}>{s}</p>
                     ))}</p>
                 </div>
                 <button onClick={right} className='self-center'>
