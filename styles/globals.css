@@ -4,8 +4,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
+/* import steveBackground from "../public/steve-background.png" */
+
 :root {
   font-family: "Courier Prime", monospace;
+  background-color: rgb(177, 212, 243);
 }
 
 .btn-primary {
@@ -78,20 +81,49 @@
 }
 
 .background-image-dog {
-  background-image: url('../public/dogs/goggi45.jpg');
+  background-image: url('../public/goggi45-nobg.png');
+  /* background-image: url('../public/dogs/goggi45.jpg'); */
   background-size: 55vw;
   background-repeat: no-repeat;
   background-position: right bottom;
 }
 
+.background-image-hero {
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: imageSwitch 1s ease-in-out infinite alternate-reverse backwards;
+}
+
+@keyframes imageSwitch {
+  /* 0% {
+    background-image: url('../public/DMlogo23.jpg');
+  } */
+  0% {
+    background-image: url('../public/DMlogo22.jpg');
+  }
+  10% {
+    background-image: url('../public/DMlogo23.jpg');
+  }
+  15% {
+    background-image: url('../public/DMlogo22.jpg');
+  }
+  20% {
+    background-image: url('../public/DMlogo23.jpg');
+  }
+  100% {
+    background-image: url('../public/DMlogo23.jpg');
+  }
+}
+
 .hero {
   @apply flex flex-col justify-center items-center;
-  height: 70vh;
+  height: 63vh;
 }
 
 .hero-small {
   @apply flex flex-col justify-center items-center;
-  height: 70vh;
+  height: 80vh;
   text-align: center;
 }
 
@@ -103,9 +135,13 @@
 
 .crazy-hero {
   /* width: 25vw; */
-  height: 100%;
+  /* height: 100%;
   position: absolute;
-  bottom: 0;
+  bottom: 0; */
+  background-image: url('../public/steve-background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .crazy-1 {
@@ -138,7 +174,7 @@
   width: 100%;
   margin-bottom: 10px;
 
-  background: transparent;
+  background: white;
   padding: 0.5rem 0.5rem;
   font-size: 1rem;
 
@@ -175,10 +211,11 @@
 
 .table-style {
 
-  border-top-left-radius: 255px 15px;
-  border-top-right-radius: 15px 225px;
-  border-bottom-right-radius: 225px 15px;
-  border-bottom-left-radius: 15px 255px;
+  border-top-left-radius: 270px 5px;
+  border-top-right-radius: 5px 270px;
+  border-bottom-right-radius: 270px 5px;
+  border-bottom-left-radius: 5px 270px;
+  width: 100%;
 
   border: solid 3px #41403E;
 }

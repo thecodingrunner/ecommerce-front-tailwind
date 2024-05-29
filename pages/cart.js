@@ -69,7 +69,7 @@ export default function CartPage() {
                     {!cartProducts?.length && (
                         <div>Cart is empty</div>
                     )}
-                    <table className="text-lg shadow-lg table-style sm:m-auto">
+                    <table className="text-lg shadow-lg table-style sm:m-auto bg-white">
                         <thead>
                             <tr>
                                 <th className="table-item pt-5">Product</th>

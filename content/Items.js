@@ -40,7 +40,32 @@ import story10 from '../public/stories/road to d pic1.jpg'
 import story11 from '../public/stories/spacecraft.jpg'
 import story12 from '../public/stories/strike.jpg'
 import story13 from '../public/stories/unexpected.jpg'
-
+// Import letter images
+import letter1 from '../public/letters/no1 130318.jpg'
+import letter2 from '../public/letters/no2 290718.jpg'
+import letter3 from '../public/letters/no3 210918.jpg'
+import letter4 from '../public/letters/no4 250918.jpg'
+import letter5 from '../public/letters/no5 2509181.jpg'
+import letter6 from '../public/letters/no6 290419.jpg'
+import letter7 from '../public/letters/no7 2904191.jpg'
+import letter8 from '../public/letters/no8 041119.jpg'
+import letter9 from '../public/letters/no9 010120.jpg'
+import letter10 from '../public/letters/no10 050120.jpg'
+import letter11 from '../public/letters/no11 090120.jpg'
+import letter12 from '../public/letters/no12 180120.jpg'
+import letter13 from '../public/letters/no13 230220.jpg'
+import letter14 from '../public/letters/no14 2302201.jpg'
+import letter15 from '../public/letters/no15 260220.jpg'
+import letter16 from '../public/letters/no16 2602201.jpg'
+import letter17 from '../public/letters/no17 020320.jpg'
+import letter18 from '../public/letters/no18 0203201.jpg'
+import letter19 from '../public/letters/no19 100320.jpg'
+import letter20 from '../public/letters/no20 120320.jpg'
+import letter21 from '../public/letters/no21 170320.jpg'
+import letter22 from '../public/letters/no22 170320.jpg'
+import letter23 from '../public/letters/no23 on the outside.jpg'
+import letter24 from '../public/letters/no24 on the outside2.jpg'
+import letter25 from '../public/letters/no25 fag packet.jpg'
 
 
 export const ScribbleDogs = [
@@ -139,7 +164,7 @@ export const ScribbleDogs = [
 export const CrazieSteve = [
     {
         id: 'steve0',
-        title: 'Crazie Steve',
+        title: 'Crazy Steve',
         description: `
         -Free Thinker\n
         -Visionary\n
@@ -232,7 +257,7 @@ export const VeryShortStories = [
     },
     {
         id: 'story1',
-        title: 'A Dream of Someone Famous',
+        title: 'A Dream Of Someone Famous',
         description: 'What’s his face came to me in a dream. Harold Wilson. No not him, him on the telly that wears big flowery shirts. No hang on, that’s another fella. A celebrity, bit of an arsehole. Always talking bollox, thinks he’s it. Anyway, he had a big stick and looked slightly angry so I took it off him.',
         image: story3,
     },
@@ -263,7 +288,7 @@ export const VeryShortStories = [
     },
     {
         id: 'story3',
-        title: 'Dedicated follower of fashion',
+        title: 'Dedicated Follower Of Fashion',
         description: `
         Cakey Johnson opened his window and looked out on the world. \n
         'Cakey you knobhead!' shouted Jack Nastie from below. \n
@@ -275,7 +300,7 @@ export const VeryShortStories = [
     },
     {
         id: 'story4',
-        title: 'Eco friendly 2',
+        title: 'Eco Friendly 2',
         description: `
         Thinking of burning down a forest to offset \n
         some ethically produced cheese I've just purchased.
@@ -284,7 +309,7 @@ export const VeryShortStories = [
     },
     {
         id: 'story5',
-        title: 'Flight cancelled',
+        title: 'Flight Cancelled',
         description: `
         I can't decide whether to fly a plane or not.\n
         How do you mean?\n
@@ -303,7 +328,7 @@ export const VeryShortStories = [
     },
     {
         id: 'story6',
-        title: 'Fury',
+        title: 'Hell Hath No Fury Like A Bloke Smashed In The Face With An Uppercut',
         description: `Dreamt I was on a plane sat next to that Tyson Fury. He had woolly gloves on and one o' them bollock protectors over his mucky jeans. He was banging on about how he could take a punch. I smashed him with an uppercut. He was right. I said I'd prefer it if he didn't reciprocate, on account of all my health conditions and that I would like to remain handsome. I don't think he heard me as a knuckle sandwich was already on its way.........\n
         I woke up at that point, teeth intact.
         `,
@@ -340,7 +365,7 @@ export const VeryShortStories = [
     },
     {
         id: 'story8',
-        title: 'Mini chops',
+        title: 'Mini Chops',
         description: `
         Bought a load o' them chops from the butcher, 10 pence for a hundred; I got 5 pence worth. Looked like they were for Action Man or something. I suggested I could put him a 'Mini Chops' sign over the door, just to generate a bit of interest like. He said he wanted to see how his 'Tiny Chickens' went first.\n
         I left it with him.
@@ -349,7 +374,7 @@ export const VeryShortStories = [
     },
     {
         id: 'story9',
-        title: 'Mistaken identity',
+        title: 'Mistaken Identity',
         description: `
         Dreamt I met that Tom Hardy in a pub, he had a big gold chain on.\n
         I said he was good at films and I liked that one where he was in a saloon.\n
@@ -361,7 +386,7 @@ export const VeryShortStories = [
     },
     {
         id: 'story10',
-        title: 'Road to damascus',
+        title: 'Road To Damascus',
         description: `
         Caveman was a bit hungry. He picked up his shotgun and went outside. He saw a rabbit riding by on a mammoth. Caveman raised his sights and took aim. The rabbit turned and winked at him. He lowered the gun; he couldn't do it to the little furry fella..\n
         'We're off to pick some privet Caveman, join us!' Shouted the rabbit.\n
@@ -387,7 +412,7 @@ export const VeryShortStories = [
     },
     {
         id: 'story12',
-        title: 'The sky at night',
+        title: 'The Sky At Night',
         description: `Gerry Spangles looked high into the night sky and saw a strange shape, slowly tracking left to right. “Is that a spacecraft?” he said, waving at it with his bad arm. It might be a spacecraft, though on reflection it was probably a plane. Yeah, definitely a plane; spacecraft don't look like that, at least not the ones I'd seen on telly. “It's a plane Gerry” I shouted back, with all the conviction of someone who wasn't quite sure. Gerry Spangles still thought it was a spacecraft. He had glimpsed something not dissimilar in last week's episode of Blake's 7. He wondered if it would land so he could have a go. He called to Jack Nastie, “Look at that, high in the night sky, I think it's a spacecraft”. “It's a f**king plane Gerry” said Jack Nastie, in that withering tone people use when they think you're a bit of a daft b*****d.`,
         image: story11,
     },
@@ -408,5 +433,164 @@ export const VeryShortStories = [
         I've noticed some cheese too.....................\n
         `,
         image: story13,
+    },
+]
+
+export const Letters = [
+    {
+        id: 'letter1',
+        title: 'No 1 13/03/18',
+        description: ``,
+        image: letter1,
+    },
+    {
+        id: 'letter1',
+        title: 'No 1 13/03/18',
+        description: ``,
+        image: letter1,
+    },
+    {
+        id: 'letter2',
+        title: 'No 2 29/07/18',
+        description: ``,
+        image: letter2,
+    },
+    {
+        id: 'letter3',
+        title: 'No 3 21/09/18',
+        description: ``,
+        image: letter3,
+    },
+    {
+        id: 'letter4',
+        title: 'No 4 25/09/18',
+        description: ``,
+        image: letter4,
+    },
+    {
+        id: 'letter5',
+        title: 'No 5 25/09/18',
+        description: ``,
+        image: letter5,
+    },
+    {
+        id: 'letter6',
+        title: 'No 6 29/04/19',
+        description: ``,
+        image: letter6,
+    },
+    {
+        id: 'letter7',
+        title: 'No 7 29/04/19',
+        description: ``,
+        image: letter7,
+    },
+    {
+        id: 'letter8',
+        title: 'No 8 04/11/19',
+        description: ``,
+        image: letter8,
+    },
+    {
+        id: 'letter9',
+        title: 'No 9 01/01/20',
+        description: ``,
+        image: letter9,
+    },
+    {
+        id: 'letter10',
+        title: 'No 10 05/01/20',
+        description: ``,
+        image: letter10,
+    },
+    {
+        id: 'letter11',
+        title: 'No 11 09/01/20',
+        description: ``,
+        image: letter11,
+    },
+    {
+        id: 'letter12',
+        title: 'No 12 18/01/20',
+        description: ``,
+        image: letter12,
+    },
+    {
+        id: 'letter13',
+        title: 'No 13 23/02/20',
+        description: ``,
+        image: letter13,
+    },
+    {
+        id: 'letter14',
+        title: 'No 14 23/02/20',
+        description: ``,
+        image: letter14,
+    },
+    {
+        id: 'letter15',
+        title: 'No 15 26/02/20',
+        description: ``,
+        image: letter15,
+    },
+    {
+        id: 'letter16',
+        title: 'No 16 26/02/20',
+        description: ``,
+        image: letter16,
+    },
+    {
+        id: 'letter17',
+        title: 'No 17 02/03/20',
+        description: ``,
+        image: letter17,
+    },
+    {
+        id: 'letter18',
+        title: 'No 18 02/03/20',
+        description: ``,
+        image: letter18,
+    },
+    {
+        id: 'letter19',
+        title: 'No 19 10/03/20',
+        description: ``,
+        image: letter19,
+    },
+    {
+        id: 'letter20',
+        title: 'No 20 12/03/20',
+        description: ``,
+        image: letter20,
+    },
+    {
+        id: 'letter21',
+        title: 'No 21 17/03/20',
+        description: ``,
+        image: letter21,
+    },
+    {
+        id: 'letter22',
+        title: 'No 22 17/03/20',
+        description: ``,
+        image: letter22,
+    },
+    {
+        id: 'letter23',
+        title: 'No 23 On The Outside',
+        description: ``,
+        image: letter23,
+    },
+    {
+        id: 'letter24',
+        title: 'No 24 On The Outside 2',
+        description: ``,
+        image: letter24,
+    },
+    {
+        id: 'letter25',
+        title: 'No 25 Fag Packet',
+        description: ``,
+        image: letter25,
     },
 ]
