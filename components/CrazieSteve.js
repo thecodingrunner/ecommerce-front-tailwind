@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CrazieSteve } from "@/content/Items";
+import { CrazieSteve } from "@/content/SteveContent";
 import steveBackground from "../public/steve-background.png"
 
 export default function Hero() {
@@ -7,7 +7,7 @@ export default function Hero() {
     return (
         <article className="hero relative crazy-hero">
             <div className="z-10 text-center background">
-                <h1 className="h1 text-white">Crazy Steve</h1>
+                <h1 className="h2 text-white">Crazy Steve</h1>
                 <Link className="btn-primary text-2xl" href={'/crazie-steve'}>Explore</Link>
             </div>
             {/* <img src={steveBackground.src} className="crazy-hero"/> */}

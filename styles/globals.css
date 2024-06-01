@@ -89,10 +89,12 @@
 }
 
 .background-image-hero {
-  background-size: 100vw;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   animation: imageSwitch 1s ease-in-out infinite alternate-reverse backwards;
+  height: 100%;
+  width: 100%;
 }
 
 @keyframes imageSwitch {
@@ -125,6 +127,7 @@
   @apply flex flex-col justify-center items-center;
   height: 80vh;
   text-align: center;
+  overflow: hidden;
 }
 
 .cross-pos {
@@ -252,5 +255,31 @@
   }
   15% {
     opacity: 0;
+  }
+}
+
+@media screen and (max-width: 1068px) {
+  .hero-small {
+    height: 70vh;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .hero-small {
+    height: 50vh;
+    /* overflow: hidden; */
+  }
+
+  .hero {
+    height: 50vh;
+  }
+
+  .background-image-hero {
+    transform: scale(2);
+    background-size: contain;
+  }
+
+  .h2 {
+    font-size: 2.5rem;
   }
 }

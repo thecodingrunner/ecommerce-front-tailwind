@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 import React, { useState, useEffect } from 'react';
-import PreloadSteveImages from './PreloadImages';
+
 
 const Modal = ({ openModal, setOpenModal, products }) => {
   const [index, setIndex] = useState(() => products.indexOf(openModal));
@@ -33,37 +33,42 @@ const Modal = ({ openModal, setOpenModal, products }) => {
     <>
       {openModal && currentProduct ? (
         <div className='fixed top-0 left-0 h-full w-full flex justify-center items-center z-100'>
-          <div className='p-6 rounded-sm relative bg-white flex flex-col shadow-2xl'>
+          <div className='p-2 sm:p-6 rounded-sm relative bg-white flex flex-col shadow-2xl'>
             <button onClick={() => setOpenModal(null)} className='self-end'>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-10 h-10">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
                 </svg>
             </button>
-            <div className='min-h-[80vh] w-[80vw] flex gap-4 justify-center'>
-                <button onClick={left} className='self-center'>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="size-14">
+            <div className='h-[80vh] w-[85vw] flex sm:gap-4 justify-center items-center'>
+                <button onClick={left} className='self-center hidden sm:block'>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="size-10 sm:size-14">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
                     </svg>
                 </button>
-                <div className={`${currentProduct.id.includes('dog') ? 'w-[60vw]' : 'w-[30vw]'} flex items-center`} >
-                    <Image 
-                        src={currentProduct.image} 
-                        alt={currentProduct.title} 
-                        className='object-contain w-full shadow-xl mr-10' 
-                        // width={500}
-                        // height={500}
-                        // layout="responsive"
-                        priority
-                    />
+                <div className='max-h-[80vh] overflow-y-auto'>
+                  <div className='flex flex-col md:flex-row gap-4 justify-center items-center max-h-full'>
+                    <div className={`w-full ${currentProduct.id.includes('dog') ? 'lg:w-[50vw]' : 'lg:w-[30vw]'} flex max-h-full`} >
+                          <Image 
+                              src={currentProduct.image} 
+                              alt={currentProduct.title} 
+                              className='shadow-xl w-auto max-h-[80vh] my-auto mx-auto' 
+                              objectFit='contain'
+                              // width={500}
+                              // height={500}
+                              // layout="fill"
+                              priority
+                          />
+                    </div>
+                    <div className={`flex w-full ${currentProduct.id.includes('dog') ? 'lg:w-[20vw]' : 'lg:w-[40vw]'} flex-col items-center justify-center text-center`}>
+                        <h1 className='text-2xl sm:text-3xl font-semibold mb-4'>{currentProduct.title}</h1>
+                        <div className='text-sm sm:text-md'>{currentProduct.description.split(/\n/g).map((s, idx) => (
+                            <p key={`${currentProduct.title}-${idx}`}>{s}</p>
+                        ))}</div>
+                    </div>
+                  </div>
                 </div>
-                <div className='flex w-[40vw] flex-col items-center justify-center text-center overflow-auto'>
-                    <h1 className='text-3xl font-semibold mb-4'>{currentProduct.title}</h1>
-                    <div className='text-md'>{currentProduct.description.split(/\n/g).map((s, idx) => (
-                        <p key={`${currentProduct.title}-${idx}`}>{s}</p>
-                    ))}</div>
-                </div>
-                <button onClick={right} className='self-center'>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="size-14">
+                <button onClick={right} className='self-center hidden sm:block'>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="size-10 sm:size-14">
                         <path strokeLinecap="round" strokeLinejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
                     </svg>
                 </button>

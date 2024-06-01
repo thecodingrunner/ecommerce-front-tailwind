@@ -1,9 +1,8 @@
 import Header from "@/components/Header";
-import {CrazieSteve} from '../content/Items'
+import {CrazieSteve} from '../content/SteveContent'
 import FeaturedDisplay from "@/components/FeaturedDisplay";
 import PageItems from '@/components/PageItems'
 import NewProducts from "@/components/NewProducts";
-import PreloadSteveImages from "@/components/PreloadImages";
 
 export default function ScribbleDogsPage() {
     function checkTarget(e) {

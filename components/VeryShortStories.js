@@ -10,7 +10,7 @@ export default function Hero() {
     console.log(VeryShortStories[1].image.src)
     return (
         <article className="hero relative overflow-hidden">
-            <h1 className="h1 z-10 text-center">Very Short Stories</h1>
+            <h1 className="h2 z-10 text-center">Very Short Stories</h1>
             <Link className="btn-primary z-10 text-2xl" href={'/very-short-stories'}>Explore</Link>
             <Image src={dream.src} alt='dream' height={dream.height} width={dream.width/2.2} className="h-full absolute left-2/3 -bottom-6 lg:block hidden"/>
             <Image src={follower.src} alt="follower" height={follower.height} width={follower.width} className="h-full absolute left-2/6 -bottom-3 lg:block hidden"/>
