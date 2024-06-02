@@ -20,4 +20,4 @@ The goal of this project was to create a presentational website for a local arti
 This project was coded using NextJS, MongoDB for the database, and Stripe for the ecommerce integration. The most difficult aspects of this project were the integration of stripe, and the creation of an admin platform with a simple interface for the artist to add products to the shop.
 <p></p>
 
-![dickie-mellie-markup](https://github.com/thecodingrunner/ecommerce-front-tailwind/assets/22331070/30cffad3-6588-40b9-b315-570047e94cc8)
+
