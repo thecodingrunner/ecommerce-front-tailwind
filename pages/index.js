@@ -8,6 +8,7 @@ import CrazieSteve from "@/components/CrazieSteve";
 import NewProducts from "@/components/NewProducts";
 import { mongooseConnect } from "@/lib/mongoose";
 import { Product } from "@/models/Product";
+import Footer from "@/components/Footer";
 
 export default function HomePage({featuredProduct,newProducts}) {
   return (
@@ -18,6 +19,7 @@ export default function HomePage({featuredProduct,newProducts}) {
       <ScribbleDogs />
       <VeryShortStories />
       <CrazieSteve />
+      <Footer />
     </div>
   )
 }

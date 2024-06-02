@@ -32,7 +32,7 @@ const Modal = ({ openModal, setOpenModal, products }) => {
   return (
     <>
       {openModal && currentProduct ? (
-        <div className='fixed top-0 left-0 h-full w-full flex justify-center items-center z-100'>
+        <div className='fixed top-0 left-0 h-full w-full flex justify-center items-center z-50'>
           <div className='p-2 sm:p-6 rounded-sm relative bg-white flex flex-col shadow-2xl'>
             <button onClick={() => setOpenModal(null)} className='self-end'>
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-10 h-10">
@@ -46,12 +46,12 @@ const Modal = ({ openModal, setOpenModal, products }) => {
                     </svg>
                 </button>
                 <div className='max-h-[80vh] overflow-y-auto'>
-                  <div className='flex flex-col md:flex-row gap-4 justify-center items-center max-h-full'>
-                    <div className={`w-full ${currentProduct.id.includes('dog') ? 'lg:w-[50vw]' : 'lg:w-[30vw]'} flex max-h-full`} >
+                  <div className='flex flex-col lg:flex-row gap-4 justify-center items-center max-h-full'>
+                    <div className={`w-full ${currentProduct.id.includes('dog') ? 'lg:w-[50vw]' : 'lg:w-[30vw]'} flex max-h-full overflow-hidden p-6`} >
                           <Image 
                               src={currentProduct.image} 
                               alt={currentProduct.title} 
-                              className='shadow-xl w-auto max-h-[80vh] my-auto mx-auto' 
+                              className='w-full max-h-full my-auto mx-auto shadow-lg' 
                               objectFit='contain'
                               // width={500}
                               // height={500}
@@ -61,7 +61,7 @@ const Modal = ({ openModal, setOpenModal, products }) => {
                     </div>
                     <div className={`flex w-full ${currentProduct.id.includes('dog') ? 'lg:w-[20vw]' : 'lg:w-[40vw]'} flex-col items-center justify-center text-center`}>
                         <h1 className='text-2xl sm:text-3xl font-semibold mb-4'>{currentProduct.title}</h1>
-                        <div className='text-sm sm:text-md'>{currentProduct.description.split(/\n/g).map((s, idx) => (
+                        <div className='text-md sm:text-md mb-3'>{currentProduct.description.split(/\n/g).map((s, idx) => (
                             <p key={`${currentProduct.title}-${idx}`}>{s}</p>
                         ))}</div>
                     </div>

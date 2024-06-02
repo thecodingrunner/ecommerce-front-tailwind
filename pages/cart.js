@@ -1,4 +1,5 @@
 import { CartContext } from "@/components/CartContext";
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import axios from "axios";
 import { useContext, useEffect, useState } from "react";
@@ -57,6 +58,7 @@ export default function CartPage() {
                 <Header />
                 <h1>Thanks for your order!</h1>
                 <p>We will email you when your order will be sent.</p>
+                <Footer />
             </>
         )
     }
@@ -151,6 +153,7 @@ export default function CartPage() {
                     <button onClick={goToPayment} className="btn-primary">Continue to payment</button>
                 </div>
             </div>
+            <Footer />
         </div>
     )
 }
