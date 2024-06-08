@@ -1,8 +1,6 @@
 <h1>Dickie Mellie Artist Website Portfolio with ecommerce shop</h1>
 
-<a src="https://www.dickiemellie.com" >Visit Website</a>
-
-https://www.dickiemellie.com
+Visit website: https://www.dickiemellie.com
 
 <h2>Description:</h2>
 NextJS website designed for a professional photographer, with an ecommerce shop integrated using stripe.
