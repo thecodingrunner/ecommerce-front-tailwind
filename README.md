@@ -2,6 +2,8 @@
 
 <a src="https://www.dickiemellie.com" >Visit Website</a>
 
+https://www.dickiemellie.com
+
 <h2>Description:</h2>
 NextJS website designed for a professional photographer, with an ecommerce shop integrated using stripe.
 
