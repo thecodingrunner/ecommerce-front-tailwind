@@ -13,11 +13,13 @@ export default function ProductPage({product}) {
             <Header />
             <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-9/12 mx-auto mb-20 mt-10">
                 <div className="shadow-lg rounded-lg h-[60vh] bg-white overflow-hidden flex items-center">
-                    <Image src={product.images[0]} className="object-contain max-h-full" alt={product.title} width={500} height={500} layout="responsive"/>
+                    <img src={product.images[0]} className="h-[60vh] object-cover" alt={product.title}/>
                 </div>
                 <div>
-                    <h1 className="h1 mb-10">{product.title}</h1>
-                    <p className="desc mb-10">{product.description}</p>
+                    <h1 className="h2 mb-10">{product.title}</h1>
+                    <div className="desc mb-10">{product.description.split('\n').map(desc => (
+                        <p>{desc}</p>
+                    ))}</div>
                     <div className="flex justify-between items-center px-3">
                         <p className="desc">£{product.price}</p>
                         <button onClick={() => addProduct(product._id)} className="btn-primary desc flex gap-2 items-center">

@@ -20,7 +20,7 @@ export default function Header() {
                 <Link href={'/scribble-dogs'} className={`header-list ${pathname === '/scribble-dogs' ? 'text-white bg-black' : 'bg-white'}`} >Scribble Dogs</Link>
                 <Link href={'/very-short-stories'} className={`header-list ${pathname === '/very-short-stories' ? 'text-white bg-black' : 'bg-white'}`} >Very Short Stories</Link>
                 <Link href={'/crazie-steve'} className={`header-list ${pathname === '/crazie-steve' ? 'text-white bg-black' : 'bg-white'}`}>Crazy Steve</Link>
-                <Link href={'/letters'} className={`header-list ${pathname === '/letters' ? 'text-white bg-black' : 'bg-white'}`}>Letters</Link>
+                <Link href={'/letters'} className={`header-list ${pathname === '/letters' ? 'text-white bg-black' : 'bg-white'}`}>About</Link>
                 <Link href={'/shop'} className={`header-list font-bold ${pathname === '/shop' ? 'text-white bg-black' : 'bg-white'}`}>Shop</Link>
                 <Link href={'/cart'} className={`header-list ${pathname === '/cart' ? 'text-white bg-black' : 'bg-white'}`}>Cart ({cartProducts.length})</Link>
             </nav>
@@ -35,7 +35,7 @@ export default function Header() {
                 <Link href={'/scribble-dogs'} className={`${pathname === '/scribble-dogs' ? 'font-bold' : ''}`} >Scribble Dogs</Link>
                 <Link href={'/very-short-stories'} className={`${pathname === '/very-short-stories' ? 'font-bold' : ''}`} >Very Short Stories</Link>
                 <Link href={'/crazie-steve'} className={`${pathname === '/crazie-steve' ? 'font-bold' : ''}`}>Crazy Steve</Link>
-                <Link href={'/letters'} className={`${pathname === '/letters' ? 'font-bold' : ''}`}>Letters</Link>
+                <Link href={'/letters'} className={`${pathname === '/letters' ? 'font-bold' : ''}`}>About</Link>
                 <Link href={'/shop'} className={`${pathname === '/shop' ? 'font-bold' : ''}`}>Shop</Link>
                 <Link href={'/cart'} className={`${pathname === '/cart' ? 'font-bold' : ''}`}>Cart ({cartProducts.length})</Link>
             </div>

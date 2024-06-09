@@ -4,7 +4,7 @@ import { CartContext } from "./CartContext";
 import Image from "next/image";
 
 export default function Featured({product}) {
-    console.log(product.images[0])
+    console.log(product)
     const {addProduct} = useContext(CartContext)
     function addFeaturedToCart() {
         addProduct(product._id)
@@ -14,9 +14,11 @@ export default function Featured({product}) {
         <div className="responsive h-auto">
             <img src={product.images[0]} alt={product._id} className="object-contain" />
         </div>
-        <div className="flex justify-center items-start flex-col text-right">
+        <div className="flex justify-center items-start flex-col">
             <h2 className="h2">{product.title}</h2>
-            <p className="text-xl">{product.description}</p>
+            <div className="text-xl">{product.description.split('\n').map(desc => (
+                        <p>{desc}</p>
+            ))}</div>
             <div className="flex gap-3 mt-3">
                 <Link href={'/product/' + product._id} className="btn-primary">Read more</Link>
                 <button className="flex gap-2 btn-primary" onClick={addFeaturedToCart}>

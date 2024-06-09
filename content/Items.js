@@ -6,13 +6,12 @@ import dog4 from '../public/dogs/dog4.jpg'
 import dog5 from '../public/dogs/12-goggie55.jpg'
 import dog6 from '../public/dogs/13-goggie331.jpg'
 import dog7 from '../public/dogs/dog7.jpg'
-import dog8 from '../public/dogs/15-goggie45.jpg'
-import dog9 from '../public/dogs/dog9.jpg'
-import dog10 from '../public/dogs/goggi45.jpg'
-import dog11 from '../public/dogs/dog11.jpg'
-import dog12 from '../public/dogs/dog12.jpg'
-import dog13 from '../public/dogs/dog14.jpg'
-import dog14 from '../public/dogs/dog15.jpg'
+import dog8 from '../public/dogs/dog9.jpg'
+import dog9 from '../public/dogs/goggi45.jpg'
+import dog10 from '../public/dogs/dog11.jpg'
+import dog11 from '../public/dogs/dog12.jpg'
+import dog12 from '../public/dogs/dog14.jpg'
+import dog13 from '../public/dogs/dog15.jpg'
 // // Import crazy steve images
 // import steve1 from '../public/steve/always in the wrong queue-min.JPG'
 // import steve2 from '../public/steve/always know-min.JPG'
@@ -77,87 +76,81 @@ export const ScribbleDogs = [
     },
     {
         id: 'dog1',
-        title: 'dog 1',
+        title: 'Buster',
         description: '',
         image: dog1,
     },
     {
         id: 'dog2',
-        title: 'dog 2',
+        title: 'Mike',
         description: '',
         image: dog2,
     },
     {
         id: 'dog3',
-        title: 'dog 3',
+        title: 'Champ',
         description: '',
         image: dog3,
     },
     {
         id: 'dog4',
-        title: 'dog 4',
+        title: 'Skip',
         description: '',
         image: dog4,
     },
     {
         id: 'dog5',
-        title: 'dog 5',
+        title: 'Blue',
         description: '',
         image: dog5,
     },
     {
         id: 'dog6',
-        title: 'dog 6',
+        title: 'Roy',
         description: '',
         image: dog6,
     },
     {
         id: 'dog7',
-        title: 'dog 7',
+        title: 'Kim',
         description: '',
         image: dog7,
     },
     {
         id: 'dog8',
-        title: 'dog 8',
+        title: 'Fuz',
         description: '',
         image: dog8,
     },
     {
         id: 'dog9',
-        title: 'dog 9',
+        title: 'Eddie',
         description: '',
-        image: dog9,
+        image: dog13,
     },
     {
         id: 'dog10',
-        title: 'dog 10',
+        title: 'Flash',
         description: '',
-        image: dog14,
+        image: dog10,
     },
     {
         id: 'dog11',
-        title: 'dog 11',
+        title: 'Jenny',
         description: '',
         image: dog11,
     },
     {
         id: 'dog12',
-        title: 'dog 12',
+        title: 'Wayne',
         description: '',
         image: dog12,
     },
     {
         id: 'dog13',
-        title: 'dog 13',
+        title: 'Zippy',
         description: '',
-        image: dog13,
-    },
-    {
-        id: 'dog14',
-        title: 'dog 14',
-        description: '',
-        image: dog10,
+        image: dog9,
     },
 ]
 
@@ -440,7 +433,7 @@ export const Letters = [
     {
         id: 'letter1',
         title: 'Letters',
-        description: ``,
+        description: `My attempt to shake up the art world, I genuinely believed I could pull this off and very nearly did.`,
         image: letter1,
     },
     {

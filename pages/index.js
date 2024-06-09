@@ -15,7 +15,6 @@ export default function HomePage({featuredProduct,newProducts}) {
     <div className="overflow-hidden">
       <Header />
       <Hero />
-      <About />
       <ScribbleDogs />
       <VeryShortStories />
       <CrazieSteve />

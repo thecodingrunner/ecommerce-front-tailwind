@@ -81,18 +81,20 @@
 }
 
 .background-image-dog {
-  background-image: url('../public/goggi45-nobg.png');
+  /* background-image: url('../public/goggi45-nobg.png'); */
+  background-image: url('../public/dog1-nobg-test1.png');
   /* background-image: url('../public/dogs/goggi45.jpg'); */
   background-size: 55vw;
   background-repeat: no-repeat;
   background-position: right bottom;
+  background-size: contain;
 }
 
 .background-image-hero {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  animation: imageSwitch 1s ease-in-out infinite alternate-reverse backwards;
+  animation: imageSwitch 3s ease-in-out infinite backwards;
   height: 100%;
   width: 100%;
 }
@@ -102,19 +104,22 @@
     background-image: url('../public/DMlogo23.jpg');
   } */
   0% {
-    background-image: url('../public/DMlogo22.jpg');
+    background-image: url('../public/DMlogo.jpg');
   }
   10% {
-    background-image: url('../public/DMlogo23.jpg');
+    background-image: url('../public/DMlogo24.jpg');
   }
-  15% {
-    background-image: url('../public/DMlogo22.jpg');
-  }
+  /* 20% {
+    background-image: url('../public/DMlogo21.jpg');
+  } */
   20% {
-    background-image: url('../public/DMlogo23.jpg');
+    background-image: url('../public/DMlogo.jpg');
   }
-  100% {
+  /* 20% {
     background-image: url('../public/DMlogo23.jpg');
+  } */
+  100% {
+    background-image: url('../public/DMlogo.jpg');
   }
 }
 
