@@ -29,7 +29,7 @@ export default function ShopPage({ featuredProduct, totalPages }) {
     // const limit =  productsPerPage
     // const tempArray = newProducts
     async function getProducts() {
-      const response = await fetch(`/api/products/${skip}`)
+      const response = await fetch(`/api/products/${skip}/`)
       console.log(response)
       let products = await response.json();
       products = JSON.parse(products)
