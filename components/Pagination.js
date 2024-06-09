@@ -8,12 +8,10 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
       pageNumbers.push(
         <li
           key={i}
-          className={`page-item ${currentPage === i ? 'active' : ''}`}
+          className={`page-item cursor-pointer ${currentPage === i ? 'border-b-4 border-black px-2' : ''}`}
           onClick={() => onPageChange(i)}
         >
-          <a className="page-link" href="#">
-            {i}
-          </a>
+          {i}
         </li>
       );
     }
@@ -23,7 +21,7 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
 
   return (
     <nav className='mx-auto flex'>
-      <ul className="flex gap-3 text-3xl mx-auto my-10">{renderPageNumbers()}</ul>
+      <ul className="flex gap-3 text-4xl mx-auto my-10">{renderPageNumbers()}</ul>
     </nav>
   );
 };
