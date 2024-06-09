@@ -10,7 +10,7 @@ import { useEffect, useState } from "react";
 
 export default function ShopPage({ featuredProduct, totalPages }) {
   const [page, setPage] = useState(1);
-  const [products, setProducts] = useState('')
+  const [products, setProducts] = useState(null)
   const productsPerPage = 9;
 
   useEffect(() => {

@@ -1,7 +1,7 @@
 import ProductBox from "./ProductBox";
 
 export default function NewProducts({ products }) {
-    console.log(typeof products);
+    console.log(products);
     return (
         <>
             {products && (
