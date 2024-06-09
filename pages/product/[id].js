@@ -18,7 +18,7 @@ export default function ProductPage({product}) {
                 <div>
                     <h1 className="h2 mb-10">{product.title}</h1>
                     <div className="desc mb-10">{product.description.split('\n').map(desc => (
-                        <p>{desc}</p>
+                        <p key={product._id}>{desc}</p>
                     ))}</div>
                     <div className="flex justify-between items-center px-3">
                         <p className="desc">£{product.price}</p>

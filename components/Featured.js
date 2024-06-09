@@ -17,7 +17,7 @@ export default function Featured({product}) {
         <div className="flex justify-center items-start flex-col">
             <h2 className="h2">{product.title}</h2>
             <div className="text-xl">{product.description.split('\n').map(desc => (
-                        <p>{desc}</p>
+                        <p key={product._id}>{desc}</p>
             ))}</div>
             <div className="flex gap-3 mt-3">
                 <Link href={'/product/' + product._id} className="btn-primary">Read more</Link>
