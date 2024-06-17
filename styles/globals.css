@@ -6,6 +6,25 @@
 
 /* import steveBackground from "../public/steve-background.png" */
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
 :root {
   font-family: "Courier Prime", monospace;
   background-color: rgb(177, 212, 243);
@@ -81,9 +100,6 @@
 }
 
 .background-image-dog {
-  /* background-image: url('../public/goggi45-nobg.png'); */
-  background-image: url('../public/dog1-nobg-test1.png');
-  /* background-image: url('../public/dogs/goggi45.jpg'); */
   background-size: 55vw;
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -133,6 +149,11 @@
   height: 80vh;
   text-align: center;
   overflow: hidden;
+}
+
+.hero-large {
+  @apply flex flex-col justify-center items-center;
+  height: 70vh;
 }
 
 .cross-pos {

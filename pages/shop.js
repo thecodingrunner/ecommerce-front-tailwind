@@ -5,7 +5,6 @@ import NewProducts from "@/components/NewProducts";
 import Pagination from "@/components/Pagination";
 import { mongooseConnect } from "@/lib/mongoose";
 import { Product } from "@/models/Product";
-import { connectToDB } from "@/utils/database";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
@@ -59,7 +58,7 @@ export default function ShopPage({ featuredProduct, totalPages }) {
 
 export async function getServerSideProps({ query }) {
   const featuredProductId = '6662eea5aa968a347bef75f4'
-  await connectToDB()
+  await mongooseConnect()
   const featuredProduct = await Product.findById(featuredProductId)
 
   const productsPerPage = 9;

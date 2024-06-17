@@ -1,9 +1,9 @@
 import Link from "next/link";
-import { CrazieSteve } from "@/content/SteveContent";
-import steveBackground from "../public/steve-background.png"
+// import { CrazieSteve } from "@/content/SteveContent";
+// import steveBackground from "../public/steve-background.png"
 
 export default function Hero() {
-    console.log(steveBackground)
+    // console.log(steveBackground)
     return (
         <article className="hero relative crazy-hero">
             <div className="z-10 text-center background">

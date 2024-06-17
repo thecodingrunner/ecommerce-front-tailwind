@@ -245,19 +245,22 @@ export const VeryShortStories = [
     {
         id: 'story0',
         title: 'Very Short Stories',
-        description: `I like to keep things as brief as possible. All the stories are based in truth to a greater or lesser extent.`,
+        description: '',
+        content: `I like to keep things as brief as possible. All the stories are based in truth to a greater or lesser extent.`,
         image: story8,
     },
     {
         id: 'story1',
         title: 'A Dream Of Someone Famous',
-        description: 'What’s his face came to me in a dream. Harold Wilson. No not him, him on the telly that wears big flowery shirts. No hang on, that’s another fella. A celebrity, bit of an arsehole. Always talking bollox, thinks he’s it. Anyway, he had a big stick and looked slightly angry so I took it off him.',
+        description: 'I bet a lot of celebrities are horrible when they\'re not on the telly.',
+        content: 'What’s his face came to me in a dream. Harold Wilson. No not him, him on the telly that wears big flowery shirts. No hang on, that’s another fella. A celebrity, bit of an arsehole. Always talking bollox, thinks he’s it. Anyway, he had a big stick and looked slightly angry so I took it off him.',
         image: story3,
     },
     {
         id: 'story2',
         title: 'Bank Job',
-        description: `
+        description: 'I promised myself I\'d do a bank job before I was 55. I went down to case my local branch and found a sign on the door saying it had closed in 2019.',
+        content: `
         You know that bank job I was going to do?\n
         Yeah.\n
         I've done it.\n
@@ -282,7 +285,8 @@ export const VeryShortStories = [
     {
         id: 'story3',
         title: 'Dedicated Follower Of Fashion',
-        description: `
+        description: 'Everyone knows someone who is a bit of an arse but we still love them don\'t we?',
+        content: `
         Cakey Johnson opened his window and looked out on the world. \n
         'Cakey you knobhead!' shouted Jack Nastie from below. \n
         Cakey ignored him and kept on looking. Jack Nastie came from a long line of arseholes; his grandad was an arsehole, his dad was an arsehole, his mother was an arsehole, his sister was an arsehole. Jack Nastie was an arsehole, but Cakey Johnson loved him all the same. \n
@@ -294,7 +298,8 @@ export const VeryShortStories = [
     {
         id: 'story4',
         title: 'Eco Friendly 2',
-        description: `
+        description: 'A slightly different take on sustainability.',
+        content: `
         Thinking of burning down a forest to offset \n
         some ethically produced cheese I've just purchased.
         `,
@@ -303,7 +308,8 @@ export const VeryShortStories = [
     {
         id: 'story5',
         title: 'Flight Cancelled',
-        description: `
+        description: 'In my head I think I probably could fly a plane - it can\'t be that hard can it?',
+        content: `
         I can't decide whether to fly a plane or not.\n
         How do you mean?\n
         You know, should I or shouldn't I?\n
@@ -322,7 +328,8 @@ export const VeryShortStories = [
     {
         id: 'story6',
         title: 'Hell Hath No Fury Like A Bloke Smashed In The Face With An Uppercut',
-        description: `Dreamt I was on a plane sat next to that Tyson Fury. He had woolly gloves on and one o' them bollock protectors over his mucky jeans. He was banging on about how he could take a punch. I smashed him with an uppercut. He was right. I said I'd prefer it if he didn't reciprocate, on account of all my health conditions and that I would like to remain handsome. I don't think he heard me as a knuckle sandwich was already on its way.........\n
+        description: 'I wouldn\'t mind being a boxer but don\'t fancy the getting punched bit.',
+        content: `Dreamt I was on a plane sat next to that Tyson Fury. He had woolly gloves on and one o' them bollock protectors over his mucky jeans. He was banging on about how he could take a punch. I smashed him with an uppercut. He was right. I said I'd prefer it if he didn't reciprocate, on account of all my health conditions and that I would like to remain handsome. I don't think he heard me as a knuckle sandwich was already on its way.........\n
         I woke up at that point, teeth intact.
         `,
         image: story6,
@@ -330,7 +337,8 @@ export const VeryShortStories = [
     {
         id: 'story7',
         title: 'Inflation',
-        description: `
+        description: 'Whenever M sends me to the shops I always inflate the prices just to cover my costs.',
+        content: `
         Did you get the bread cakes?\n
         Yeah.\n
         How much do I owe you?\n
@@ -359,7 +367,8 @@ export const VeryShortStories = [
     {
         id: 'story8',
         title: 'Mini Chops',
-        description: `
+        description: 'I went down to Simmonite\'s butchers and was transfixed by the smallest chops in the world - I brought 3 packs.',
+        content: `
         Bought a load o' them chops from the butcher, 10 pence for a hundred; I got 5 pence worth. Looked like they were for Action Man or something. I suggested I could put him a 'Mini Chops' sign over the door, just to generate a bit of interest like. He said he wanted to see how his 'Tiny Chickens' went first.\n
         I left it with him.
         `,
@@ -368,7 +377,8 @@ export const VeryShortStories = [
     {
         id: 'story9',
         title: 'Mistaken Identity',
-        description: `
+        description: 'Saw him on the telly the other day and was shocked to see his brow was excessively furrowed for a film star (have a look if you don\'t believe me).',
+        content: `
         Dreamt I met that Tom Hardy in a pub, he had a big gold chain on.\n
         I said he was good at films and I liked that one where he was in a saloon.\n
         He said he hadn’t been in a saloon one.\n
@@ -380,7 +390,8 @@ export const VeryShortStories = [
     {
         id: 'story10',
         title: 'Road To Damascus',
-        description: `
+        description: 'It\'s about redemption.',
+        content: `
         Caveman was a bit hungry. He picked up his shotgun and went outside. He saw a rabbit riding by on a mammoth. Caveman raised his sights and took aim. The rabbit turned and winked at him. He lowered the gun; he couldn't do it to the little furry fella..\n
         'We're off to pick some privet Caveman, join us!' Shouted the rabbit.\n
         Caveman put down his rifle, jumped on his bike and followed...............................\n
@@ -390,7 +401,8 @@ export const VeryShortStories = [
     {
         id: 'story11',
         title: 'Strike',
-        description: `
+        description: 'This did happen (kind of).',
+        content: `
         You're needed for another patrol.\n
         We're not going.\n
         What do you mean you're not going?\n
@@ -406,13 +418,15 @@ export const VeryShortStories = [
     {
         id: 'story12',
         title: 'The Sky At Night',
-        description: `Gerry Spangles looked high into the night sky and saw a strange shape, slowly tracking left to right. “Is that a spacecraft?” he said, waving at it with his bad arm. It might be a spacecraft, though on reflection it was probably a plane. Yeah, definitely a plane; spacecraft don't look like that, at least not the ones I'd seen on telly. “It's a plane Gerry” I shouted back, with all the conviction of someone who wasn't quite sure. Gerry Spangles still thought it was a spacecraft. He had glimpsed something not dissimilar in last week's episode of Blake's 7. He wondered if it would land so he could have a go. He called to Jack Nastie, “Look at that, high in the night sky, I think it's a spacecraft”. “It's a f**king plane Gerry” said Jack Nastie, in that withering tone people use when they think you're a bit of a daft b*****d.`,
+        description: 'I have never seen one so this is imagined.',
+        content: `Gerry Spangles looked high into the night sky and saw a strange shape, slowly tracking left to right. “Is that a spacecraft?” he said, waving at it with his bad arm. It might be a spacecraft, though on reflection it was probably a plane. Yeah, definitely a plane; spacecraft don't look like that, at least not the ones I'd seen on telly. “It's a plane Gerry” I shouted back, with all the conviction of someone who wasn't quite sure. Gerry Spangles still thought it was a spacecraft. He had glimpsed something not dissimilar in last week's episode of Blake's 7. He wondered if it would land so he could have a go. He called to Jack Nastie, “Look at that, high in the night sky, I think it's a spacecraft”. “It's a f**king plane Gerry” said Jack Nastie, in that withering tone people use when they think you're a bit of a daft b*****d.`,
         image: story11,
     },
     {
         id: 'story13',
         title: 'Unexpected',
-        description: `
+        description: 'I piss about a lot at home, I think M gets sick of it sometimes.',
+        content: `
         I've found some ham in the fridge.\n
         Yeah, I put it there.\n
         It's just that I wasn't expecting it.\n
