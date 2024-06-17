@@ -1,0 +1,26 @@
+services: 
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    develop: 
+      watch: 
+        - path: ./package.json
+          action: rebuild
+        - path: ./next.config.js
+          action: rebuild
+        - path: ./package-lock.json
+          action: rebuild
+        - path: .
+          target: /app
+          action: sync
+    environment:
+      - MONGODB_URI=mongodb+srv://finnmoffett:NlzVyz6UqyZfNrnO@cluster0.gxejnjm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+      - STRIPE_PK=pk_test_51PEZvFKAqITjdnT7RXKJOYjT16a8yI9WVzYD0oGOEi4iiRcuf5iXQS1DcqSxdhvqB6x99Uc65KUyCgdI1XyKr4Wl00Man6z2h1
+      - STRIPE_SK=sk_test_51PEZvFKAqITjdnT7Y2UJkyFzQEbtxNIBDXpGQfCGdJSKMqEJknWctHwtv8RH5jWkNWsTzpCKmDfqKZFyhCx4Vh7W00fuamr0tK
+      - PUBLIC_URL=http://localhost:3001
+
+volumes:
+  tasked:

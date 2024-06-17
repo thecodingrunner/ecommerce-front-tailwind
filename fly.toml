@@ -1,0 +1,28 @@
+# fly.toml app configuration file generated for ecommerce-front-tailwind on 2024-06-12T19:51:26+01:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'ecommerce-front-tailwind'
+primary_region = 'lhr'
+
+[build]
+
+[http_service]
+  internal_port = 3000
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ['app']
+
+[[vm]]
+  memory = '1gb'
+  cpu_kind = 'shared'
+  cpus = 1
+
+[env]
+  MONGODB_URI = "mongodb+srv://finnmoffett:NlzVyz6UqyZfNrnO@cluster0.gxejnjm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+  STRIPE_PK = "pk_test_51PEZvFKAqITjdnT7RXKJOYjT16a8yI9WVzYD0oGOEi4iiRcuf5iXQS1DcqSxdhvqB6x99Uc65KUyCgdI1XyKr4Wl00Man6z2h1"
+  STRIPE_SK = "sk_test_51PEZvFKAqITjdnT7Y2UJkyFzQEbtxNIBDXpGQfCGdJSKMqEJknWctHwtv8RH5jWkNWsTzpCKmDfqKZFyhCx4Vh7W00fuamr0tK"
+  PUBLIC_URL = "https://ecommerce-front-tailwind.fly.dev"

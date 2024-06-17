@@ -1,9 +1,9 @@
 import Link from "next/link";
 import {VeryShortStories} from '../content/Items'
-import fury from '../public/fury_nobg.png'
-import dream from '../public/dream_nobg.png'
-import follower from '../public/follower_nobg.png'
-import Image from "next/image";
+// import fury from '../public/fury_nobg.png'
+// import dream from '../public/dream_nobg.png'
+// import follower from '../public/follower_nobg.png'
+// import Image from "next/image";
 
 export default function Hero() {
     // console.log(dream)

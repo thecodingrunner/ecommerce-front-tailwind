@@ -13,7 +13,7 @@ export default function ProductBox({product}) {
             </Link>
             <Link href={'/product/'+product._id} className="px-3 mt-6 text-lg font-semibold">{product.title}</Link>
             <div className="flex justify-between items-center px-3 mt-2">
-                <p className="text-lg">£{product.price}</p>
+                {/* <p className="text-lg">£{product.price}</p> */}
                 <button onClick={(e) => {
                     e.stopPropagation()
                     addProduct(product._id)
