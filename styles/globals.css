@@ -100,12 +100,6 @@
 }
 
 .background-image-dog {
-<<<<<<< HEAD
-=======
-  /* background-image: url('../public/goggi45-nobg.png'); */
-  background-image: url('../public/dog1-nobg-test1.jpg');
-  /* background-image: url('../public/dogs/goggi45.jpg'); */
->>>>>>> b44b50270eb2c37c3aaedead1c0046af3ffa973e
   background-size: 55vw;
   background-repeat: no-repeat;
   background-position: right bottom;

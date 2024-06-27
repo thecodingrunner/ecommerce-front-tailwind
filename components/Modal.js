@@ -61,7 +61,7 @@ const Modal = ({ openModal, setOpenModal, products }) => {
                     </div>
                     <div className={`flex w-full ${currentProduct.id.includes('dog') ? 'lg:w-[20vw]' : 'lg:w-[40vw]'} flex-col items-center justify-center text-center`}>
                         <h1 className='text-2xl sm:text-3xl font-semibold mb-4'>{currentProduct.title}</h1>
-                        <div className='text-md p-1 border-2 border-black sm:text-md mb-3 overflow-y-scroll w-full lg:max-h-[40vh] text-wrap'>{currentProduct.content?.split(/\n/g).map((s, idx) => (
+                        <div className={`text-md p-1 ${currentProduct.content ? 'border-2 border-black' : ''} sm:text-md mb-3 overflow-y-scroll w-full lg:max-h-[40vh] text-wrap`}>{currentProduct.content?.split(/\n/g).map((s, idx) => (
                             <p key={`${currentProduct.title}-${idx}`} className='overflow-wrap break-words'>{s}</p>
                         ))}</div>
                         <p className='font-semibold text-wrap'>{currentProduct.description}</p>
