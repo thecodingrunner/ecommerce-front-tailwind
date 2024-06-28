@@ -245,7 +245,7 @@ export const VeryShortStories = [
     {
         id: 'story0',
         title: 'Very Short Stories',
-        description: '',
+        description: 'I like to keep things as brief as possible. None of my essays at school were ever more than half a side, which reflected in my O Level results. All the stories are based in truth to a greater or lesser extent.',
         content: `I like to keep things as brief as possible. All the stories are based in truth to a greater or lesser extent.`,
         image: story8,
     },
@@ -253,7 +253,7 @@ export const VeryShortStories = [
         id: 'story1',
         title: 'A Dream Of Someone Famous',
         description: 'I bet a lot of celebrities are horrible when they\'re not on the telly.',
-        content: 'What’s his face came to me in a dream. Harold Wilson. No not him, him on the telly that wears big flowery shirts. No hang on, that’s another fella. A celebrity, bit of an arsehole. Always talking bollox, thinks he’s it. Anyway, he had a big stick and looked slightly angry so I took it off him.',
+        content: 'What’s his face came to me in a dream. Harold Wilson. No not him, him on the telly that wears big flowery shirts. No hang on, that’s another fella. A celebrity, bit of an a***hole. Always talking bollox, thinks he’s it. Anyway, he had a big stick and looked slightly angry so I took it off him.',
         image: story3,
     },
     {
@@ -288,8 +288,8 @@ export const VeryShortStories = [
         description: 'Everyone knows someone who is a bit of an arse but we still love them don\'t we?',
         content: `
         Cakey Johnson opened his window and looked out on the world. \n
-        'Cakey you knobhead!' shouted Jack Nastie from below. \n
-        Cakey ignored him and kept on looking. Jack Nastie came from a long line of arseholes; his grandad was an arsehole, his dad was an arsehole, his mother was an arsehole, his sister was an arsehole. Jack Nastie was an arsehole, but Cakey Johnson loved him all the same. \n
+        'Cakey you kn**head!' shouted Jack Nastie from below. \n
+        Cakey ignored him and kept on looking. Jack Nastie came from a long line of a***holes; his grandad was an a***hole, his dad was an a***hole, his mother was an a***hole, his sister was an a***hole. Jack Nastie was an a***hole, but Cakey Johnson loved him all the same. \n
         'I'm off to get me some o' them emperor's new clothes everyone's talking about!' bellowed Jack Nastie. \n
         Jack Nastie came from a long line of idiots..................................but Cakey Johnson loved him all the same. \n
         `,
@@ -329,7 +329,7 @@ export const VeryShortStories = [
         id: 'story6',
         title: 'Hell Hath No Fury Like A Bloke Smashed In The Face With An Uppercut',
         description: 'I wouldn\'t mind being a boxer but don\'t fancy the getting punched bit.',
-        content: `Dreamt I was on a plane sat next to that Tyson Fury. He had woolly gloves on and one o' them bollock protectors over his mucky jeans. He was banging on about how he could take a punch. I smashed him with an uppercut. He was right. I said I'd prefer it if he didn't reciprocate, on account of all my health conditions and that I would like to remain handsome. I don't think he heard me as a knuckle sandwich was already on its way.........\n
+        content: `Dreamt I was on a plane sat next to that Tyson Fury. He had woolly gloves on and one o' them b*ll*ck protectors over his mucky jeans. He was banging on about how he could take a punch. I smashed him with an uppercut. He was right. I said I'd prefer it if he didn't reciprocate, on account of all my health conditions and that I would like to remain handsome. I don't think he heard me as a knuckle sandwich was already on its way.........\n
         I woke up at that point, teeth intact.
         `,
         image: story6,
@@ -357,7 +357,7 @@ export const VeryShortStories = [
         Corn fed pigs or something. Not pigs, sheep. No, not sheep, cows.\n
         And the pickle?\n
         It's gone up quite a bit since last time; twelve pounds.\n
-        Are you taking the piss?\n
+        Are you taking the p*ss?\n
         No, I'm probably out of pocket on this one, not even covered my costs.\n
         Let me guess, were the onions twelve pounds too?\n
         Well, it wasn't easy getting hold of onions...........\n
@@ -425,7 +425,7 @@ export const VeryShortStories = [
     {
         id: 'story13',
         title: 'Unexpected',
-        description: 'I piss about a lot at home, I think M gets sick of it sometimes.',
+        description: 'I p*ss about a lot at home, I think M gets sick of it sometimes.',
         content: `
         I've found some ham in the fridge.\n
         Yeah, I put it there.\n
