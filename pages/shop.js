@@ -1,3 +1,5 @@
+"use client"
+
 import Featured from "@/components/Featured";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
@@ -12,6 +14,11 @@ export default function ShopPage({ featuredProduct, totalPages }) {
   const [page, setPage] = useState(1);
   const [products, setProducts] = useState(null)
   const productsPerPage = 9;
+
+  let scrollToProducts
+  if(typeof document !== "undefined") {
+    scrollToProducts = document.getElementById("products");
+}
 
   useEffect(() => {
     async function getCurrentPage() {
@@ -36,7 +43,9 @@ export default function ShopPage({ featuredProduct, totalPages }) {
       setProducts(products)
     }
     getProducts()
-    window.scrollTo(0, 0)
+    if (scrollToProducts) {
+      scrollToProducts.scrollIntoView({ behavior: "smooth" })
+    }
   };
 
   return (

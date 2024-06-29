@@ -1,37 +1,38 @@
+"use client"
+
 import Link from "next/link";
 import { useContext } from "react";
 import { CartContext } from "./CartContext";
 import Image from "next/image";
+import shopBackground from '../public/ShopBackground.png'
 
-export default function Featured({product}) {
-    console.log(product)
-    const {addProduct} = useContext(CartContext)
-    function addFeaturedToCart() {
-        addProduct(product._id)
+export default function Featured() {
+
+    let scrollToProducts
+    if(typeof document !== "undefined") {
+        scrollToProducts = document.getElementById("products");
     }
+
   return (
     <>
-        {product && (<div className="grid md:grid-cols-2 mx-auto w-9/12 pt-10 gap-4 md:gap-10 grid-cols-1">
-            <div className="responsive h-auto">
-                <img src={product.images[0]} alt={product._id} className="object-contain" />
-            </div>
-            <div className="flex justify-center items-start flex-col">
-                <h2 className="h2">{product.title}</h2>
-                <div className="text-xl">{product.description.split('\n').map(desc => (
-                            <p key={product._id}>{desc}</p>
-                ))}</div>
-                <div className="flex gap-3 mt-3">
-                    <Link href={'/product/' + product._id} className="btn-primary">Read more</Link>
-                    <button className="flex gap-2 btn-primary" onClick={addFeaturedToCart}>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
-                        </svg>
-                        Add to cart
-                    </button>
-                </div>
-            </div>
+        <div className="w-[90vw] md:w-4/5 lg:w-3/4 mx-auto h-[50vh] bg-white mt-10 rounded-xl overflow-hidden relative flex justify-center items-center">
+            <img src={shopBackground.src} alt='Shop Background' className="h-full w-full object-cover absolute left-0 top-0 z-0" />
+            <h1 className="text-4xl sm:text-6xl md:text-8xl z-20 font-bold text-white">Merchandise</h1>
+            <div className="w-full h-full absolute top-0 left-0 bg-black opacity-40 z-10" />
         </div>
-        )}
+        <div className="mx-auto text-center">
+            <h2 className="mt-10 text-3xl">View Merchandise</h2>
+            <button onClick={() => {
+                if (scrollToProducts) {
+                    scrollToProducts.scrollIntoView({ behavior: "smooth" })
+                }
+            }}>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.8} stroke="currentColor" className="size-28">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+            </button>
+        </div>
+        <div id="test" />
     </>
   );
 }

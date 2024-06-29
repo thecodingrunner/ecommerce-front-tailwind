@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ['finn-next-ecommerce.s3.amazonaws.com'],
+    domains: ['firebasestorage.googleapis.com'],
   },
 };
 
