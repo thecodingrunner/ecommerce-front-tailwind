@@ -4,7 +4,7 @@ import Link from "next/link";
 import { useContext } from "react";
 import { CartContext } from "./CartContext";
 import Image from "next/image";
-import shopBackground from '../public/ShopBackground.png'
+import shopBackground from '../public/ShopBackground-min.png'
 
 export default function Featured() {
 

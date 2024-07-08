@@ -33,7 +33,7 @@ export default function ProductBox({ product, index }) {
         <img
           src={product.images[0]}
           alt={product.title}
-          className="h-full object-cover"
+          className="object-cover h-full"
         />
       </Link>
       <Link

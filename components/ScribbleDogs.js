@@ -1,6 +1,6 @@
 import Link from "next/link";
 // import dog from '../public/dogs/goggi45.jpg'
-import dog from '../public/dog1-nobg-test1.png'
+import dog from '../public/dog1-nobg-test1-min.png'
 
 export default function Hero() {
     console.log(dog.src)
