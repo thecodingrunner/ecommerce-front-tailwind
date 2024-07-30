@@ -38,7 +38,7 @@ export default function ProductBox({ product, index }) {
       </Link>
       <Link
         href={"/product/" + product._id}
-        className="px-3 mt-6 text-lg font-semibold"
+        className="w-auto mt-6 text-lg font-semibold"
       >
         {product.title}
       </Link>

@@ -4,7 +4,7 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import ScribbleDogs from "@/components/ScribbleDogs";
 import VeryShortStories from "@/components/VeryShortStories";
-import CrazieSteve from "@/components/CrazieSteve";
+import CrazySteve from "@/components/CrazySteve";
 import NewProducts from "@/components/NewProducts";
 import { mongooseConnect } from "@/lib/mongoose";
 import { Product } from "@/models/Product";
@@ -15,7 +15,7 @@ export default function HomePage({featuredProduct,newProducts}) {
     <div className="overflow-hidden">
       <Header />
       <Hero />
-      <CrazieSteve />
+      <CrazySteve />
       <ScribbleDogs />
       <VeryShortStories />
       <Footer />

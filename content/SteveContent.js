@@ -12,7 +12,7 @@ import steve10 from '../public/steve/task avoidance-min.JPG'
 import steve11 from '../public/steve/whatever it is-min.JPG'
 import steve12 from '../public/steve/youre special-min.JPG'
 
-export const CrazieSteve = [
+export const CrazySteve = [
     {
         id: 'steve0',
         title: 'Crazy Steve',
