@@ -12,7 +12,6 @@ export default function ScribbleDogsPage() {
     return (
         <div>
           <Header />
-          <About />
           {/* <FeaturedDisplay product={Letters[0]}/> */}
           <LettersBio product={Letters[0]}/>
           <PageItems products={Letters.slice(1)}/>
